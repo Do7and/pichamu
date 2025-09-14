@@ -1,0 +1,167 @@
+$env:CLAUDE_CODE_GIT_BASH_PATH="C:\Do7and\SEnv\Git\Git\bin\bash.exe"
+
+$env:ANTHROPIC_AUTH_TOKEN = "sk-i3NoKHAZzJXugBdXn3Du4o048Qze6dxflRAKQXLN14xQQ77O"
+
+$env:ANTHROPIC_BASE_URL = "https://anyrouter.top"
+
+
+
+$env:ANTHROPIC_AUTH_TOKEN = "sk-wHd4ERC5q4k5dHnYfMAsHSCjr6FKaBIXc7zohgNZp5s6dKdT"
+
+$env:ANTHROPIC_BASE_URL = "https://club.claudecode.site"
+
+
+
+$env:ANTHROPIC_BASE_URL = "https://clubcdn.383338.xyz"
+
+
+
+Start-Process "powershell" -ArgumentList "-NoExit", "-Command", "claude mcp serve vscode-mcp"
+
+
+
+$env:ANTHROPIC_AUTH_TOKEN="cr_1af60e417a5b6f541d29eeef87f585cf86a80c35cbdaf47e90e1fe72089bfd80"
+$env:ANTHROPIC_BASE_URL="https://claude.nonocode.cn/api"
+$env:CLAUDE_CODE_GIT_BASH_PATH="C:\Do7and\SEnv\Git\Git\bin\bash.exe"
+
+
+
+
+
+$env:ANTHROPIC_AUTH_TOKEN="sk-b4lZYnhFm8ZG04y_0S7zdohcaXkf2bLTBbNdhxsy5gec4lpZwksbHCMvy1U"
+$env:ANTHROPIC_BASE_URL="https://api.ccode.qzz.io/claude"
+$env:CLAUDE_CODE_GIT_BASH_PATH="C:\Do7and\SEnv\Git\Git\bin\bash.exe"
+
+
+
+cr_1af60e417a5b6f541d29eeef87f585cf86a80c35cbdaf47e90e1fe72089bfd80
+
+
+
+
+
+移动端（Android/iOS）
+
+adb connect 127.0.0.1:16384
+adb devices
+
+
+
+显式切换：
+
+cargo build --no-default-features --features system-sqlite
+
+
+
+$env:PUB_HOSTED_URL = "https://pub.flutter-io.cn"
+$env:FLUTTER_STORAGE_BASE_URL = "https://storage.flutter-io.cn"
+
+
+
+$env:RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rust-static"
+$env:RUSTUP_UPDATE_ROOT="https://mirrors.tuna.tsinghua.edu.cn/rust-static/rustup"
+
+flutter run -d "DCO AL00"
+
+flutter run -d 127.0.0.1:7555
+
+npx @vscode-mcp/vscode-mcp-server
+
+现在我进入app了，问题还是很多 最主要的是主页面的设计主页面应该是图库的瀑布流，然后下方有像是app标签页切换一样的按钮，可以切换到其他功能下，第一个按钮也就是默认进入显示的是图库
+第二个是去重，去重页面首先直接显示初步加载app以后的去重计算结果 应该已经存储成为相似组的形式了 这里直接就开始处理重复图片了，每组的每一张图片都可以点击选中，然后图片上多一个半透明的白色垃圾桶，再点一下就直接删除  
+第三个按钮是标签搜索及管理 ，现在先不着急实现，第四个按钮是本地图片语义检索 ，这个页面简单就是最上方一个输入框，输入完文字后开始检索相关的图片显示在下方 第五个按钮是设置页  请你理解下我说的，然后看看如何实现，有不懂的地方先找我确认
+
+
+
+现在去重功能完全没有生效啊，我明明在图库里放了几张重复的图片的，但是现在完全没有检测到，请你打印更多信息，在app初始化的时候就打印所有图片计算得到的hash相似度，然后打印写到dupXXX——group那张表的所有内容。另外现在图库加载图片为什么不全啊，我一共16张图片结果最后只有10张了，你需要打印图片为什么少了的原因
+
+UI层
+现在的图库页的瀑布流只有三列，应该做成可以设置里可以配置的，从1列到10列配置。图库页的标题不应该是图库而是具体的显示内容，默认是"所有图片",然后允许点击去切换文件夹，选文件夹后显示该文件夹下的图片
+现在去重页面的ui需要调整，点击图片后的删除不应该放在重复组里面，而是应该放在最上方全局的，并且不应该随着滑动下方内容而被滑动
+现在的删除按钮并没有实现，，提示的文字也应该改成”你可以随时在最近删除中找回这些图片“
+欢迎及介绍页还是有问题，要做真正的权限确认，导向系统权限申请的地方，一遍介绍后台应该一直在跑初始化app的作业，其实每次启动都应该确认权限
+现在要考虑闪退情况的处理，比如说我修改了hash算法，那重新计算时是不是应该走作业处理，一旦中断，需要重启作业，  包括第一次初始化应该也是作业机制去做，作业失败时要注意回退
+设置页添加一个查看日志的功能，应该可以看到和终端一样的日志
+
+
+
+修改第三个agent告诉他birdge的流程让他去检查
+现在cc执行命令经常报错 大多数是命令的路径不是windows路径导致的，让cc记住如何调用命令，防止对于简单命令的反复尝试
+
+
+banana 可用gemin
+AIzaSyCqCFmER2T5LVx5i8c3inyPMbcoeABh6M0
+AIzaSyClKWmq6bkv2kW-ZT-G_ESrxzU8b4dIF9w
+
+
+AIzaSyDfYsNbRSDnizJhZq6NGfvG3c3iv-9zCLE
+AIzaSyA8CM0nRUM3XAsR4fj5NCZ7PJrZNIR5mTM
+AIzaSyCNKZqGKhFA9QsIEpl8pMT582TAkAHSB7M
+AIzaSyAqko3NqGS-GtXhzm8LeiZ3xUEyo_XIqLo
+AIzaSyBbOvOEPYa8YhDoVwnTWjFeqPfjLCohvA0
+AIzaSyBbbkbGOCylzw9Kgt9y8SqNvdQoO0wCb9Q
+AIzaSyDVh8FKTFmKN4bXl3eDW08J8r59rFIzsuA
+AIzaSyD_QkHiMP6SywCbji47EYeYEY1ysIDC00Y
+AIzaSyAP9s00Lqou1qtpHTWjPHneuZyh0B4M9YA
+AIzaSyDzf2NKO7x3ff28z542P_fwQvqOwgTgjB4
+AIzaSyCqCFmER2T5LVx5i8c3inyPMbcoeABh6M0
+AIzaSyCt71fTFExKKepEv4reR3pkCBiD-o4-hqA
+AIzaSyD4z99pxqer4jpTE2AkO4dMuZ2xGZo65i4
+AIzaSyBiQv2AZxaZd6_u3ltibUIj3AfWO5ZXKEI
+AIzaSyANseu2p8NRj0_qkSD-MO-L0_0g4kyBgac
+AIzaSyBaYkOY_pT-mPTtsEy-MmdmqrkImtDKTds
+AIzaSyCWWp87jq69qbFdC2hIvd1B7QgZf0QuS5U
+AIzaSyDE8OIxzLxqBg3oUj3g1AHTwXL6j775kI0
+AIzaSyDHLT_siCv3SYIt6VrBC9tgtkK5Rn_Fxck
+AIzaSyDLfkKklEMnVwwf0fUBbU2h5hZxM8jlpZg
+AIzaSyBpMxS3A2AcdkgjN5BBaZQJpqcBg79MVtE
+AIzaSyC6TleUYdGDaEXTFjSW141LGDGztUAAuOQ
+AIzaSyBKQ1HZ9WT9RLzPzqX1PqNywh8IJ1YB-gQ
+AIzaSyDDPDIjOm8ApdIPeyVYRGy-5u5RjZMY6gA
+AIzaSyChaep6ttjm0US-gSBokwtn-OPbl0cvb_0
+AIzaSyC6p7LZZd60HkJUfvEdhkcadw-y5jvgB_8
+AIzaSyAe8rheF4wv2ZHJB2YboUhyyVlM2y0vmlk
+AIzaSyCGukp8EB-O3m6B6OQ7j8zzPXnadCVOz_8
+AIzaSyCBAWorWGGp-a6tSWlpffc2cak4iiwaL74
+AIzaSyDyg5ccf4g5zVNijZ_AObiH8kkm05kzdRY
+AIzaSyAdgR9BGfQrV2fzndXZLZYgiRtpydlq8ug
+AIzaSyBZ87AnOONJzS-mxVpYHHJMmTA05VlOn0o
+AIzaSyBfLlvWYndiQ3RFEHli65qGQH36QIxdyCI
+AIzaSyCB5sc4sgRVObMraVTM-ymBkANcjiQXcV0
+AIzaSyDjbRm-o-eriFd_WcxOI9YphV6pP8kNp1k
+AIzaSyDHVsuHs02opS6EgxL-DdgToOIWxIweJOA
+AIzaSyCBX7qtsIrJ4M9zeRvMaJCOTGo9L1oCpr8
+AIzaSyDXCkctRYfRaXZlOY2xWUXtp7bPZI2Fe-g
+AIzaSyAS5sulyUGwhbA2qhUYsfH3knxQsc2jVys
+AIzaSyDfJnq9ueYTx_vmIKv_KULrGevterpXguo
+AIzaSyCF0qA-Rk4MDFtTw2R1QrNfrv3kRCHYeow
+AIzaSyBwnoEr6oNq7yjgvR97ZcqRuvYoC0uW8A4
+AIzaSyA0mSmGq-SZ57Nzutk1TD3dGxcQC98LnZw
+AIzaSyBeK15_zNGSYNswe5lZPh3fnJpqu2kGStA
+AIzaSyCA1lsOyd5UFwk2OqOTNDb6J-gz5rwIvkk
+AIzaSyCNJ0iv-Why9tmFmkTZrIVPp_B_qMZYQpg
+AIzaSyCwtqZvVOiEx86-ZY1Xssn1sw6sikVLia0
+AIzaSyDpVRBv7ak6VitdXsCfgo-Oy1eJ34xmdt4
+AIzaSyDu6dD7oKN3FvgfSlCDsuflON0HYGBBSWQ
+AIzaSyACbfe8yCB7DMdNjiaASK-nGxbxMFZFHe0
+AIzaSyCWq1–9JnN9QM7k57Rc_qmt9c0OVy0rME
+AIzaSyD192xVzwNr_C4pwgGHenWpuPVOIH5Pa4w
+AIzaSyDMmHRrGdL0CHeikcNfrG4M8HLC32slJ6E
+AIzaSyD-k6rznRZyo4SO-3n1tIAQvQ7IdyuXUmE
+AIzaSyC2VKFNKJ7gk4XopbCmdnl6UyCgqh6qL2I
+AIzaSyAQX2vOW3XhoiFLCHyYwi8kmDGAfpsdzeg
+AIzaSyBnBvPARR68MNMA0Ij6yVP9f5re46aXYBY
+AIzaSyDMdBR4AKCkV5kx-Pe-ytC8tOP8YUmC67c
+AIzaSyCNwCbz1CjCScdV_qOyeAZfafYUHRKmtNA
+AIzaSyCgupEgvHnvynd_oTyDYVUPNbPUZS0nFFo
+AIzaSyCf1ntCvH-H7LCNoPBtoOZKuxdJ_PD0Btk
+AIzaSyA5t2XnnCMsCg7SE-odHhX1o5gHIxX2kBQ
+AIzaSyD_6YL4k8PEE8SrwKpHwwW9HxDL8lRlazs
+AIzaSyD-Jw5wuTceNtaOzk4Rv3zayr4wrJKqW2w
+AIzaSyBdDVJrXw3Jpo27cuT5CuvM-o4BRUhIW0Y
+AIzaSyAykQNc_nLDCiaKWyslPHAn5u9iJwWhZSM
+AIzaSyCMIgabOSU5SUcerJjoOK8Q9odaVnQ8ImU
+AIzaSyBGZIVydL2mTzazixiUoVpqhdNv_2t_oUc
+AIzaSyDzMwtId4VCJY2dTIjiTTxWKCdGrzTNZFk
+AIzaSyDcMhLnb3GpoCv6H_iPGSRJO19ERp9cFQ0
+AIzaSyCR47ndYnp0jxNAWB-QJ8gUbdHtrYnQdHs
